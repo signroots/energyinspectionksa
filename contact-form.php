@@ -34,9 +34,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $headers .= "From: Energy Inspection Website <opm@energyinspectionksa.com>\r\n";
         $headers .= "Reply-To: $email\r\n";
 
-     file_put_contents("test.txt", print_r($_POST, true));
-
-if (mail($to, $subject, $body, $headers)) {
+   if (mail($to, $subject, $body, $headers)) {
             echo json_encode([
                 "status" => "Success",
                 "msg" => "Thank you for contacting us. We will get back to you shortly."
