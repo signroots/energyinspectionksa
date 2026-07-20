@@ -5155,7 +5155,11 @@ Chnages
     height: auto;
 }
 
-
+@media screen and (max-width: 1199px) {
+    .navbar-brand img {
+        width: 200px;
+    }
+}
 /*==================================
         OUR PROCESS
 ==================================*/
