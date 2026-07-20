@@ -36,7 +36,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         if (mail($to, $subject, $body, $headers)) {
             echo json_encode([
-                "status" => "success",
+                "status" => "Success",
                 "msg" => "Thank you for contacting us. We will get back to you shortly."
             ]);
         } else {
