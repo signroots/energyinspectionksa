@@ -5635,3 +5635,44 @@ Chnages
 }
 
 }
+
+.certificate-box{
+    background:#fff;
+    padding:25px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.certificate-box:hover{
+    transform:translateY(-8px);
+}
+
+.certificate-box figure{
+    margin:0 0 20px;
+}
+
+.certificate-box img{
+    width:100%;
+    max-width:850px;   /* Controls certificate width */
+    height:auto;
+    display:block;
+    margin:0 auto;
+    border:1px solid #ddd;
+    border-radius:10px;
+    padding:8px;
+    background:#fff;
+}
+
+.certificate-box h4{
+    font-size:28px;
+    font-weight:700;
+    margin:20px 0 10px;
+}
+
+.certificate-box p{
+    margin-bottom:0;
+    color:#666;
+    font-size:16px;
+}
