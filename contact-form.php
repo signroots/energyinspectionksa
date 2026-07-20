@@ -10,7 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if (!empty($fname) && !empty($email)) {
 
-        $to = "arathi@signroots.com";
+        $to = "opm@energyinspectionksa.com";
         $subject = "New Contact Form Inquiry";
 
         $body = "
