@@ -5143,21 +5143,23 @@ Chnages
     }
 
 }
-
 .navbar-brand img {
-    width: 320px;   /* Adjust as needed */
+    width: 320px;
     height: auto;
     max-width: 100%;
 }
 
-.footer-logo img {
-    width: 300px;
-    height: auto;
+/* Tablet */
+@media (max-width: 991px) {
+    .navbar-brand img {
+        width: 220px !important;
+    }
 }
 
-@media screen and (max-width: 1199px) {
+/* Mobile */
+@media (max-width: 767px) {
     .navbar-brand img {
-        width: 200px;
+        width: 180px !important;
     }
 }
 /*==================================
