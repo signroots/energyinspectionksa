@@ -180,27 +180,28 @@
                         <h3 class="quote-title text-size-40">Request a Quote</h3>
                         <div class="divider"></div>
 
-                        <form id="quoteForm">
+                       <form id="quoteForm" action="mail.php" method="post">
+
                             <label class="form-label">Full Name:</label>
-                            <input type="text" class="form-control" placeholder="" required>
+                            <input type="text" name="fname" class="form-control" required>
 
                             <label class="form-label">Email:</label>
-                            <input type="email" class="form-control" placeholder=" " required>
+                            <input type="email" name="email" class="form-control" required>
 
                             <label class="form-label">Phone:</label>
-                            <input type="text" class="form-control" placeholder="" required>
+                            <input type="text" name="phone" class="form-control" required>
 
                             <label class="form-label">Message</label>
-                            <textarea class="form-control"
-                                placeholder="Message"></textarea>
+                            <textarea name="msg" class="form-control" placeholder="Message"></textarea>
 
                             <button type="submit" class="submit-btn">
                                 Submit Request
-                                <span class="btn-circle"><img src="assets/images/dark-arrow.png" alt="arrow"></span>
+                                <span class="btn-circle">
+                                    <img src="assets/images/dark-arrow.png" alt="arrow">
+                                </span>
                             </button>
 
                         </form>
-
                         <div class="footer-text">
                             By submitting, you agree to be contacted about inventory and pricing.
                         </div>
