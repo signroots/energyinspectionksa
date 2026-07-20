@@ -5143,25 +5143,19 @@ Chnages
     }
 
 }
+
 .navbar-brand img {
-    width: 320px;
+    width: 320px;   /* Adjust as needed */
     height: auto;
     max-width: 100%;
 }
 
-/* Tablet */
-@media (max-width: 991px) {
-    .navbar-brand img {
-        width: 220px !important;
-    }
+.footer-logo img {
+    width: 300px;
+    height: auto;
 }
 
-/* Mobile */
-@media (max-width: 767px) {
-    .navbar-brand img {
-        width: 180px !important;
-    }
-}
+
 /*==================================
         OUR PROCESS
 ==================================*/
