@@ -10,7 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if (!empty($fname) && !empty($email)) {
 
-        $to = "opm@energyinspectionksa.com";
+        $to = "info@energyinspectionksa.com";
         $subject = "New Contact Form Inquiry";
 
         $body = "
@@ -31,7 +31,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         $headers  = "MIME-Version: 1.0\r\n";
         $headers .= "Content-type:text/html; charset=UTF-8\r\n";
-        $headers .= "From: Energy Inspection Website <opm@energyinspectionksa.com>\r\n";
+        $headers .= "From: Energy Inspection Website <info@energyinspectionksa.com>\r\n";
         $headers .= "Reply-To: $email\r\n";
 
    if (mail($to, $subject, $body, $headers)) {
