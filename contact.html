@@ -213,40 +213,43 @@
                         <!-- contact left con -->
                     </div>
                 </div>
-                <div class="col-md-7 wow fadeInLeft" data-wow-duration="2s" data-wow-delay="0.05s">
-                    <div class="quote-card">
-                        <h3 class="quote-title text-size-40">Request a Quote</h3>
-                        <div class="divider"></div>
+             <div class="col-md-7 wow fadeInLeft" data-wow-duration="2s" data-wow-delay="0.05s">
+    <div class="quote-card">
+        <h3 class="quote-title text-size-40">Request a Quote</h3>
+        <div class="divider"></div>
 
-                       <form id="quoteForm" action="mail.php" method="post">
+        <form action="https://formspree.io/f/mjgnonaq" method="POST">
 
-                            <label class="form-label">Full Name:</label>
-                            <input type="text" name="fname" class="form-control" required>
+            <label class="form-label">Full Name:</label>
+            <input type="text" name="Full Name" class="form-control" required>
 
-                            <label class="form-label">Email:</label>
-                            <input type="email" name="email" class="form-control" required>
+            <label class="form-label">Email:</label>
+            <input type="email" name="Email" class="form-control" required>
 
-                            <label class="form-label">Phone:</label>
-                            <input type="text" name="phone" class="form-control" required>
+            <label class="form-label">Phone:</label>
+            <input type="tel" name="Phone" class="form-control" required>
 
-                            <label class="form-label">Message</label>
-                            <textarea name="msg" class="form-control" placeholder="Message"></textarea>
+            <label class="form-label">Message:</label>
+            <textarea name="Message" class="form-control" placeholder="Message" rows="5" required></textarea>
 
-                            <button type="submit" class="submit-btn">
-                                Submit Request
-                                <span class="btn-circle">
-                                    <img src="assets/images/dark-arrow.png" alt="arrow">
-                                </span>
-                            </button>
+            <!-- Optional -->
+            <input type="hidden" name="_subject" value="New Quote Request">
+            <input type="hidden" name="_captcha" value="false">
 
-                        </form>
-                        <div class="footer-text">
-                            By submitting, you agree to be contacted about inventory and pricing.
-                        </div>
-                    </div>
-                    <!-- col -->
-                </div>
-            </div>
+            <button type="submit" class="submit-btn">
+                Submit Request
+                <span class="btn-circle">
+                    <img src="assets/images/dark-arrow.png" alt="arrow">
+                </span>
+            </button>
+
+        </form>
+
+        <div class="footer-text">
+            By submitting, you agree to be contacted about inventory and pricing.
+        </div>
+    </div>
+</div>
             <!-- container -->
         </div>
         <!-- contact information con -->
@@ -265,36 +268,7 @@
         <!-- padding rl -->
     </div>
     <div class="spacer"></div>
-    <!-- NEWSLETTER SECTION --
-    <div class="padding-rl float-left w-100">
-        <section class="float-left w-100 newsletter-con position-relative main-box br-50 bg-blue">
-            <div class="main-container">
-                <div class="d-flex justify-content-between">
-                    <div class="newsletter-img-con  wow fadeInLeft" data-wow-duration="2s" data-wow-delay="0.05s">
-                        <figure><img src="assets/images/footer-vector.png" alt=""></figure>
-                        <!-- newsletter-img-con --
-                    </div>
-                    <div class="newsletter-content-con wow fadeInRight" data-wow-duration="2s" data-wow-delay="0.05s">
-                        <h2 class="text-white text-size-60">Subscribe to Our <br>
-                            Newsletter</h2>
-                        <form action="javascript:;">
-                            <div class="form-group position-relative mb-0">
-                                <input type="text" class="form_style" placeholder="Enter Your Email Address"
-                                    name="email">
-                                <button><i class="fa-solid fa-paper-plane"></i></button>
-                            </div>
-                        </form>
-                        <!-- newsletter content con --
-                    </div>
-                    <!-- d-flex --
-                </div>
-
-                <!-- main container --
-            </div>
-            <!-- newsletter con --
-        </section>
-        <!-- padding-rl --
-    </div>
+    
     <!-- FOOTER SECTION -->
     <div class="padding-rl float-left w-100">
         <div class="float-left w-100 footer-con position-relative main-box br-50">
@@ -372,7 +346,7 @@
     <script src="assets/js/back-to-top-button.js"></script>
     <script src="assets/js/preloader.js"></script>
     <script src="assets/js/counter.js"></script>
-    <script src="assets/js/contact-form.js"></script>
+    <!-- <script src="assets/js/contact-form.js"></script> -->
     <link rel="stylesheet" href="assets/js/bootstrap.min.js">
 </body>
 
